@@ -5,4 +5,107 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    color: #F8F9FF;
+    padding: 4.8px;
+}
+
+:root{
+    --green-color: #009379;
+    --black-color: #2D2D2D;
+}
+
+.main-nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+.nav-logo-img{
+    cursor: pointer;
+}
+.nav-logo-text{
+    color: var(--black-color);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 27.3px;
+    text-align: center;
+}
+.nav-logo-text1{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 27.3px;
+    text-align: center;
+}
+.nav-buttons{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-button-contact{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: var(--green-color);
+}
+.nav-secondary-btn{
+    border: none;
+    background-color: #E5F4F2;
+    color: var(--green-color);
+    padding: 16px 50px 16px 50px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 30px;
+}
+.nav-primary-btn{
+    border: none;
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 16px 50px 16px 50px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+
+@media screen and (min-width: 375px) and (max-width: 780px) {
+    .nav-button-contact{
+        display: none;
+    }
+    .nav-primary-btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav-secondary-btn{
+        display: none;
+    }
+    .nav-button-contact{
+        display: none;
+    }
+    .nav-primary-btn{
+        display: none;
+    }
+    .nav-logo{
+        justify-content: center;
+        width: 100vw;
+    }
 }
