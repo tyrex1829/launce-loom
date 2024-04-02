@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 body{
-    color: #F8F9FF;
+    background-color: #F8F9FF;
     
 }
 
@@ -176,6 +176,75 @@ body{
     overflow: hidden;
 }
 
+/* feature section */
+.feature{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px 120px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.feature-title{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49.4px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black-color);
+}
+.feature-desc{
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+.other-feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.feature-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #ffffff;
+    max-width: calc(100%/3.5);
+    padding: 40px 30px 40px 30px;
+    border: none;
+    border-radius: 20px;
+}
+.feature-div h1{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36.4px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--black-color);
+}
+.feature-div p{
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black-color);
+}
+.feature-div a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: var(--green-color);
+}
 
 @media screen and (max-width: 850px) {
     /* nav-bar */
@@ -210,6 +279,35 @@ body{
         margin: 0 auto 40px auto;
         padding: 40px 0 40px 0;
         gap: 30px;
+    }
+    .company-img img{
+        width: 69.78px;
+        height: 21.76px;
+    }
+}
+
+@media screen and (max-width: 780px){
+
+    /* feature */
+    .other-feature{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature-div{
+        max-width: 100%;
+    }
+    .feature{
+        padding: 80px 30px 80px 30px;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+    /* company */
+    .companies{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
     }
     .company-img img{
         width: 69.78px;
@@ -253,19 +351,13 @@ body{
         line-height: 24px;
         text-align: center;
     }
-}
 
-
-@media screen and (max-width: 630px){
-
-    /* company */
-    .companies{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 80px;
+    /* feature */
+    .feature{
+        padding: 60px 30px 60px 30px;
     }
-    .company-img img{
-        width: 69.78px;
-        height: 21.76px;
+    .other-feature{
+        gap: 30px;
     }
 }
+
