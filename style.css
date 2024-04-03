@@ -309,6 +309,54 @@ body{
     color: var(--black-color);
 }
 
+/* cta section */
+.cta{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px 120px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+.cta-img img{
+    overflow: hidden;
+}
+.cta-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.cta-title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--black-color);
+}
+.cta-desc{
+    font-family: Mulish;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    text-align: left;
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+.cta-primary-btn{
+    border: none;
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 16px 50px 16px 50px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+
 @media screen and (max-width: 850px) {
     /* nav-bar */
     .nav-button-contact{
@@ -347,6 +395,26 @@ body{
         width: 69.78px;
         height: 21.76px;
     }
+
+    /* cta */
+    .cta{
+        padding: 80px 30px 100px 30px;
+    }
+    .cta-img img{
+        width: 320px;
+        height: 266.67px;
+
+    }
+    .cta-title{
+        font-size: 38px;
+        line-height: 49.4px;
+        letter-spacing: -0.02em;
+    }
+    .cta-desc{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
 }
 
 @media screen and (max-width: 780px){
@@ -395,6 +463,29 @@ body{
     .company-img img{
         width: 69.78px;
         height: 21.76px;
+    }
+}
+
+@media screen and (max-width: 590px){
+
+    /* cta */
+    .cta{
+        padding: 60px 30px 60px 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cta-content{
+        align-items: center;
+    }
+    .cta-title{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36.4px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+    .cta-desc{
+        text-align: center;
     }
 }
 
